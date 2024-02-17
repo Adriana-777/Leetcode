@@ -1,0 +1,15 @@
+/*题目描述：
+    删除一个数组nums里与val值相等的元素，并返回删除后的数组长度。
+    要求不使用额外数组，原地修改输入数组。元素顺序可变。
+    请注意，输入数组是以「引用」方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
+ 算法思路：
+    双指针a,b 当nums[a] != val时，拷贝nums[a]到nums[b]
+    while loop 和 for loop都可以
+    以下是
+     class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        while 1: 
+            try: nums.remove(val) 
+            except: 
+                break 
+                return len(nums)
